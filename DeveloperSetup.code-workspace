@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Whitepages/General/DeveloperSetup"
+		},
+		{
+			"path": "../../../.config/nix-darwin"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

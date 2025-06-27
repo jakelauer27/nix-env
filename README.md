@@ -1,4 +1,4 @@
-# Whitepages Developer Setup for macOS
+# Personal Developer Setup for macOS
 
 This repository contains a standardized macOS development environment setup using [nix-darwin](https://github.com/LnL7/nix-darwin) and [Home Manager](https://github.com/nix-community/home-manager). It provides a declarative, reproducible configuration that ensures all developers have a consistent environment with the tools they need.
 
