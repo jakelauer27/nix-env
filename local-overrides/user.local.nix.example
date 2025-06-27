@@ -1,0 +1,18 @@
+{ config, pkgs, ... }:
+{
+  # ---------------------------------------------------------------------------
+  # Per-developer user account override.
+  # ---------------------------------------------------------------------------
+
+  # Primary macOS username on this machine.
+  system.primaryUser = "<your-mac-username>";
+
+  # Declare the user for nix-darwin
+  users.users.<your-mac-username> = {
+    home  = "/Users/<your-mac-username>";
+    shell = pkgs.zsh;
+  };
+
+  # Wire home-manager for this user (imports home.nix + home.local.nix).
+  home-manager.users.<your-mac-username> = import ../home.nix;
+}

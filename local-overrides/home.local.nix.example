@@ -1,0 +1,26 @@
+{ config, pkgs, ... }:
+{
+  # ---------------------------------------------------------------------------
+  # Personal shell aliases, helper functions, and secrets.
+  # ---------------------------------------------------------------------------
+
+  # Example aliases -----------------------------------------------------------------
+  home.shellAliases = {
+    k            = "kubectl";
+  };
+
+  # Example environment vars / secrets ---------------------------------------------
+  home.sessionVariables = {
+    NODE_OPTIONS      = "--max-old-space-size=32768";
+    CONFLUENCE_TOKEN  = "<token>";
+    CONFLUENCE_USER   = "<email>";
+    SLACK_TOKEN       = "<xoxb-token>";
+    DATABRICKS_TOKEN  = "<pat>";
+  };
+
+  # Example zsh initialisation ------------------------------------------------------
+  programs.zsh.initContent = ''
+    # initialise starship prompt
+    eval "$(starship init zsh)"
+  '';
+}

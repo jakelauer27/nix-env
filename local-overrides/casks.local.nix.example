@@ -1,0 +1,15 @@
+{ pkgs, ... }:
+{
+  # ---------------------------------------------------------------------------
+  # Extra Homebrew casks specific to this developer.
+  # ---------------------------------------------------------------------------
+
+  # Example:
+  # homebrew = {
+  #   casks = [
+  #     "logi-options-plus"
+  #     "spotify"
+  #     "rectangle"
+  #   ];
+  # };
+}
